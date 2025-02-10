@@ -16,8 +16,9 @@
   background-color:bisque;
   width: auto;
   height: auto;
-  padding: 10px;
+  padding: 15px;
   border-radius: 20px;
+  font-weight: bold;
 }
 
 #new {
@@ -27,7 +28,8 @@
   width: auto;
   height: auto;
   background-color: goldenrod;
-  padding: 10px;
+  padding: 12px;
   border-radius: 20px;
   border-width: 0;
+  font-weight: bold;
 }

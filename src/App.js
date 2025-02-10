@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 async function getData () {
@@ -7,24 +7,22 @@ async function getData () {
   return data
 }
 
-
-
-
 function App() {
   const [fact, setFact] = useState('');
   
-  async function fetchFact() {
-    const catFcat =  await getData();
-    setFact(catFcat.fact);
-  }
-  fetchFact();
-
+  useEffect(() => {
+    async function fetchFact() {
+      const catFcat =  await getData();
+      setFact(catFcat.fact);
+    }
+    fetchFact();
+  },[]);
+  
   return (
     <div className='container'>
       <div className='cat-fact'>{fact}</div>
       <button id='new'>New</button>
     </div>
-    
   )
 }
 
