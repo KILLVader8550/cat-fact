@@ -1,3 +1,4 @@
+/* Container Styles */
 .container {
   display: flex;
   flex-direction: column;
@@ -9,18 +10,20 @@
   gap: 20px;
 }
 
+/* Cat Fact Styles */
 .cat-fact {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:bisque;
-  width: auto;
+  background-color: bisque;
+  max-width: 90vw;
   height: auto;
   padding: 15px;
   border-radius: 20px;
   font-weight: bold;
 }
 
+/* Button Styles */
 #new {
   display: flex;
   justify-content: center;
@@ -32,4 +35,10 @@
   border-radius: 20px;
   border-width: 0;
   font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new:hover {
+  background-color: darkgoldenrod;
 }
